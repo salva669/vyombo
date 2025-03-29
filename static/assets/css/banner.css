@@ -1,0 +1,14 @@
+.custom-banner img {
+    width: 522px;
+    height: 335px;
+    object-fit: cover; /* Ensures the image fills the space without distortion */
+}
+
+.slides-size {
+    width: 1075px; /* Adjust as needed */
+    height: 320px; /* Set the height */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
