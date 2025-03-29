@@ -1,0 +1,129 @@
+START PROJECT
+$django-admin startproject harusi
+Inside myschool directory
+START APP
+$python manage.py startapp harusiapp
+
+++create 'templates' folder to hold your html templates
+-put the 'index.html' file selected
+
+++create 'static' folder to put all your static files
+
+++create a 'urls.py' file in harusiapp to put your url directions
+
+++ define the indexview in the views.py file
+
+++add the app urls file to the urls.py project's file
+
+++in the settings file remember to indicate the templates as well as the static folder.
++++also add the harusiapp configuration in the settings installed apps
+
+++in the index.html file remember to well call the static files
+
+
+
+***CONECTING WITH MYSQL*********
+++open mysql client command
+
+$create database harusi_database;
+$create user 'admin_harusi'@'localhost' identified by 'Admin123';
+$grant all privileges on *.* to 'admin'@'localhost';
+
+++remember to change settings of the system to now use MySql database
+++add your tables, models to the system
+
+*******************8CREATING AN ADMIN USER*************************
+++Add a CustomUser model in the models
+1-admin
+2-mwanaharusi
+3-mwanakamati
+++make a OneToOne field relation between default user model in admin and mwanaharusi models
+
+++Register the CustomUser model in settings.py 
+AUTH_USER_MODEL="harusiapp.CustomUser"
+++remember to make migrations when done 
+$python manage.py makemigrations
+$python manage.py migrate
+
+++If you see no changes detected then run Migration Command for app by 
+$python manage.py  makemigrations harusiapp
+$python manage.py migrate
+
+++Now, create One Super User which is Admin 
+$python manage.py createsuperuser
+---username:admin
+---email: admin@gmail.com
+---passssss:Admin123
+
+++create Blank UserModel class and registering into admin.py
+--If not created then Password will not be encrypted
+--make sure to register this model and CustomUser model created in models.py
+
+++Normalize the admin and mwanaharusi model by removing Name, Pasword, Email because this info
+already storing in Default Django User which is CustomUser
+
+++Drop again the database tables and delete the migrations folder
+
+++create Signal in Django so when New User is created anew row is added in Admin, Mwanaharusi with its
+ID in admin_id column
+--create 
+this method wil run only when data added in CustomUser
+--create function that will add data into admin, mwanaharusi table
+
+++make migrations
+$python manage.py  makemigrations harusiapp
+$python manage.py migrate
+
+++create superUser again
+$python manage.py createsuperuser
+---username:admin
+---passssss:Admin123
+
+++change form action path to process the login request
+
+++Django default authenticate function works with Username and Password, so create Custom
+authenticate Function For Login via Email and Password name it EmailBackEnd.py
+
+++register the EmailBackEnd in settings.py
+
+
+************************************Create HomePage of Admin***********************
++create a template folder named admin_template
+++in it create a base_template.html file and paste the template you would like to use
+
++separate header, sidebar, and main content in separate template then including the file in base_template
+ +create the content_header.html file and it put the header content
+
++now add block for main content: this will be set from each separate template on the basis of page requirement
+ ++create home_content.html file and in it put the main content code
+
++now, create footer template. footer.html and in it put the footer code
+
+++we do not need the control side bar for now so we delete it's code
+
++in the bottom, we create block for custom JS so we can pass our custom JS here on loading template page 
+
++just befor header create a block for custom css
+
++create the notification_template.html file and in it put the right nav-bar code
+
++create the sidebar_template.html file and in it put the main side bar code
+
++in home html page extend the base template
+++enclose the code of home content .html into block main content
+
++after login complete store error and sucess message in messages
+++if login failed store data into messages.errror()
+++ad a block for showing error message on login failed in login_page.html page
+
++on login sucess enable to redirect user to admin Home Page
+
++create the AdminViews.py file in the app to be using paths for admin views
+
++in the home page return the home_content.html page
+++create the sidebar menus as desired
+
++create add_mwanaharusi_template.html file
+
++make the title change by template
+++create add_client_save template and create its view and path
