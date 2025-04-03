@@ -3198,6 +3198,9 @@ font-family: FontAwesome;
   font-family: 'Open Sans', sans-serif;
   margin-bottom: 0px;
 }
+.wide-banner-5.cnt-strip {
+  position: relative;
+}
 .blog-slider-container .blog-slider .blog-post-info .name {
   font-size: 18px;
   font-weight:600;
@@ -7362,7 +7365,7 @@ li.dropdown.navbar-right.special-menu {
 .clients_author {font-size:14px; font-weight:bold; color:#333;  letter-spacing:0.5px; display:block; text-align:center}
 .clients_author span{font-size:13px; font-weight:normal; color:#999; display:block;}
 .testimonials-section .bx-wrapper .bx-pager {padding-top: 30px;}
-.testimonials-section .bx-wrapper {margin: 0 0 50px;}
+.testimonials-section .bx-wrapper {margin: 0 0 50px; }
 .testimonials-section em {font-size:30px; font-style:normal; vertical-align:top; display:inline-block; line-height:5px; margin-top:15px;     font-family: Arial, Helvetica, sans-serif;}
 
 /*===================================================================================*/
