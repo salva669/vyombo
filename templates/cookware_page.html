@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,19 +13,19 @@
 <title>Marazzo premium HTML5 & CSS3 Template</title>
 
 <!-- Bootstrap Core CSS -->
-<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
 
 <!-- Customizable CSS -->
-<link rel="stylesheet" href="assets/css/main.css">
-<link rel="stylesheet" href="assets/css/blue.css">
-<link rel="stylesheet" href="assets/css/owl.carousel.css">
-<link rel="stylesheet" href="assets/css/owl.transitions.css">
-<link rel="stylesheet" href="assets/css/animate.min.css">
-<link rel="stylesheet" href="assets/css/rateit.css">
-<link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
+<link rel="stylesheet" href="{% static 'assets/css/main.css' %}">
+<link rel="stylesheet" href="{% static 'assets/css/blue.css' %}">
+<link rel="stylesheet" href="{% static 'assets/css/owl.carousel.css' %}">
+<link rel="stylesheet" href="{% static 'assets/css/owl.transitions.css' %}">
+<link rel="stylesheet" href="{% static 'assets/css/animate.min.css' %}">
+<link rel="stylesheet" href="{% static 'assets/css/rateit.css' %}">
+<link rel="stylesheet" href="{% static 'assets/css/bootstrap-select.min.css' %}">
 
 <!-- Icons/Glyphs -->
-<link rel="stylesheet" href="assets/css/font-awesome.css">
+<link rel="stylesheet" href="{% static 'assets/css/font-awesome.css' %}">
 
 <!-- Fonts -->
 <link href="https://fonts.googleapis.com/css?family=Barlow:200,300,300i,400,400i,500,500i,600,700,800" rel="stylesheet">
@@ -84,7 +85,7 @@
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-3 logo-holder"> 
           <!-- ============================================================= LOGO ============================================================= -->
-          <div class="logo"> <a href="home.html"> <img src="assets/images/logo.png" alt="logo"> </a> </div>
+          <div class="logo"> <a href="home.html"> <img src="{% static 'assets/images/logo.png' %}" alt="logo"> </a> </div>
           <!-- /.logo --> 
           <!-- ============================================================= LOGO : END ============================================================= --> </div>
         <!-- /.logo-holder -->
@@ -130,7 +131,7 @@
                 <div class="cart-item product-summary">
                   <div class="row">
                     <div class="col-xs-4">
-                      <div class="image"> <a href="detail.html"><img src="assets/images/products/p4.jpg" alt=""></a> </div>
+                      <div class="image"> <a href="detail.html"><img src="{% static 'assets/images/products/p4.jpg' %}" alt=""></a> </div>
                     </div>
                     <div class="col-xs-7">
                       <h3 class="name"><a href="index8a95.html?page-detail">Simple Product</a></h3>
@@ -239,7 +240,7 @@
                           </div>
                           <!-- /.col -->
                           
-                          <div class="col-xs-12 col-sm-6 col-md-4 col-menu banner-image"> <img class="img-responsive" src="assets/images/banners/top-menu-banner.jpg" alt=""> </div>
+                          <div class="col-xs-12 col-sm-6 col-md-4 col-menu banner-image"> <img class="img-responsive" src="{% static 'assets/images/banners/top-menu-banner.jpg' %}" alt=""> </div>
                           <!-- /.yamm-content --> 
                         </div>
                       </div>
@@ -317,7 +318,7 @@
                               <li><a href="#">Memory Cards</a></li>
                             </ul>
                           </div>
-                          <div class="col-xs-12 col-sm-12 col-md-4 col-menu custom-banner"> <a href="#"><img alt="" src="assets/images/banners/top-menu-banner1.jpg"></a> </div>
+                          <div class="col-xs-12 col-sm-12 col-md-4 col-menu custom-banner"> <a href="#"><img alt="" src="{% static 'assets/images/banners/top-menu-banner1.jpg' %}"></a> </div>
                         </div>
                         <!-- /.row --> 
                       </div>
@@ -502,7 +503,7 @@
                           <li><a href="#">Headphones</a></li>
                         </ul>
                       </div>
-                      <div class="dropdown-banner-holder"> <a href="#"><img alt="" src="assets/images/banners/banner-side.png" /></a> </div>
+                      <div class="dropdown-banner-holder"> <a href="#"><img alt="" src="{% static 'assets/images/banners/banner-side.png' %}" /></a> </div>
                     </div>
                     <!-- /.row --> 
                   </li>
@@ -608,7 +609,7 @@
                           <li><a href="#">Headphones</a></li>
                         </ul>
                       </div>
-                      <div class="dropdown-banner-holder"> <a href="#"><img alt="" src="assets/images/banners/banner-side.png" /></a> </div>
+                      <div class="dropdown-banner-holder"> <a href="#"><img alt="" src="{% static 'assets/images/banners/banner-side.png' %}" /></a> </div>
                     </div>
                     <!-- /.row --> 
                   </li>
@@ -713,7 +714,7 @@
                           <li><a href="#">Headphones</a></li>
                         </ul>
                       </div>
-                      <div class="dropdown-banner-holder"> <a href="#"><img alt="" src="assets/images/banners/banner-side.png" /></a> </div>
+                      <div class="dropdown-banner-holder"> <a href="#"><img alt="" src="{% static 'assets/images/banners/banner-side.png' %}" /></a> </div>
                     </div>
                     <!-- /.row --> 
                   </li>
@@ -981,7 +982,7 @@
         
         <div id="category" class="category-carousel hidden-xs">
           <div class="item">
-            <div class="image"> <img src="assets/images/banners/cat-banner-1.jpg" alt="" class="img-responsive"> </div>
+            <div class="image"> <img src="{% static 'assets/images/banners/cat-banner-1.jpg' %}" alt="" class="img-responsive"> </div>
             <div class="container-fluid">
               <div class="caption vertical-top text-left">
                 <div class="big-text"> Big Sale </div>
@@ -1082,8 +1083,8 @@
                         <div class="product-image">
                           <div class="image"> 
                           <a href="detail.html">
-                             <img src="assets/images/products/p1.jpg" alt=""> 
-                              <img src="assets/images/products/p1_hover.jpg" alt="" class="hover-image">
+                             <img src="{% static 'assets/images/products/p1.jpg' %}" alt=""> 
+                              <img src="{% static 'assets/images/products/p1_hover.jpg' %}" alt="" class="hover-image">
                           </a> 
                        </div>
                           <!-- /.image -->
@@ -1131,8 +1132,8 @@
                         <div class="product-image">
                           <div class="image"> 
                           <a href="detail.html">
-                             <img src="assets/images/products/p2.jpg" alt=""> 
-                              <img src="assets/images/products/p2_hover.jpg" alt="" class="hover-image">
+                             <img src="{% static 'assets/images/products/p2.jpg' %}" alt=""> 
+                              <img src="{% static 'assets/images/products/p2_hover.jpg' %}" alt="" class="hover-image">
                           </a> 
                        </div>
                           <!-- /.image -->
@@ -1180,8 +1181,8 @@
                         <div class="product-image">
                          <div class="image"> 
                           <a href="detail.html">
-                             <img src="assets/images/products/p3.jpg" alt=""> 
-                              <img src="assets/images/products/p3_hover.jpg" alt="" class="hover-image">
+                             <img src="{% static 'assets/images/products/p3.jpg' %}" alt=""> 
+                              <img src="{% static 'assets/images/products/p3_hover.jpg' %}" alt="" class="hover-image">
                           </a> 
                        </div>
                           <!-- /.image -->
@@ -1229,8 +1230,8 @@
                         <div class="product-image">
                           <div class="image"> 
                           <a href="detail.html">
-                             <img src="assets/images/products/p4.jpg" alt=""> 
-                              <img src="assets/images/products/p4_hover.jpg" alt="" class="hover-image">
+                             <img src="{% static 'assets/images/products/p4.jpg' %}" alt=""> 
+                              <img src="{% static 'assets/images/products/p4_hover.jpg' %}" alt="" class="hover-image">
                           </a> 
                        </div>
                           <!-- /.image -->
@@ -1278,8 +1279,8 @@
                         <div class="product-image">
                           <div class="image"> 
                          <a href="detail.html">
-                             <img src="assets/images/products/p5.jpg" alt=""> 
-                              <img src="assets/images/products/p5_hover.jpg" alt="" class="hover-image">
+                             <img src="{% static 'assets/images/products/p5.jpg' %}" alt=""> 
+                              <img src="{% static 'assets/images/products/p5_hover.jpg' %}" alt="" class="hover-image">
                           </a> 
                        </div>
                           <!-- /.image -->
@@ -1327,8 +1328,8 @@
                           <div class="image"> 
                           
                         <a href="detail.html">
-                             <img src="assets/images/products/p6.jpg" alt=""> 
-                              <img src="assets/images/products/p6_hover.jpg" alt="" class="hover-image">
+                             <img src="{% static 'assets/images/products/p6.jpg' %}" alt=""> 
+                              <img src="{% static 'assets/images/products/p6_hover.jpg' %}" alt="" class="hover-image">
                           </a> 
                        </div>
                           <!-- /.image -->
@@ -1377,8 +1378,8 @@
                           <div class="image">
                           
                          <a href="detail.html">
-                             <img src="assets/images/products/p7.jpg" alt=""> 
-                              <img src="assets/images/products/p7_hover.jpg" alt="" class="hover-image">
+                             <img src="{% static 'assets/images/products/p7.jpg' %}" alt=""> 
+                              <img src="{% static 'assets/images/products/p7_hover.jpg' %}" alt="" class="hover-image">
                           </a> 
                        </div>
                           <!-- /.image -->
@@ -1427,8 +1428,8 @@
                           <div class="image"> 
                           
                            <a href="detail.html">
-                             <img src="assets/images/products/p8.jpg" alt=""> 
-                              <img src="assets/images/products/p8_hover.jpg" alt="" class="hover-image">
+                             <img src="{% static 'assets/images/products/p8.jpg' %}" alt=""> 
+                              <img src="{% static 'assets/images/products/p8_hover.jpg' %}" alt="" class="hover-image">
                           </a> 
                        </div>
                           <!-- /.image -->
@@ -1477,8 +1478,8 @@
                         <div class="product-image">
                           <div class="image"> 
                            <a href="detail.html">
-                             <img src="assets/images/products/p9.jpg" alt=""> 
-                              <img src="assets/images/products/p9_hover.jpg" alt="" class="hover-image">
+                             <img src="{% static 'assets/images/products/p9.jpg' %}" alt=""> 
+                              <img src="{% static 'assets/images/products/p9_hover.jpg' %}" alt="" class="hover-image">
                           </a> 
                        </div>
                           <!-- /.image -->
@@ -1527,8 +1528,8 @@
                           <div class="image">
                           
                            <a href="detail.html">
-                             <img src="assets/images/products/p10.jpg" alt=""> 
-                              <img src="assets/images/products/p10_hover.jpg" alt="" class="hover-image">
+                             <img src="{% static 'assets/images/products/p10.jpg' %}" alt=""> 
+                              <img src="{% static 'assets/images/products/p10_hover.jpg' %}" alt="" class="hover-image">
                           </a> 
                        </div>
                           <!-- /.image -->
@@ -1576,8 +1577,8 @@
                         <div class="product-image">
                           <div class="image"> 
                            <a href="detail.html">
-                             <img src="assets/images/products/p11.jpg" alt=""> 
-                              <img src="assets/images/products/p11_hover.jpg" alt="" class="hover-image">
+                             <img src="{% static 'assets/images/products/p11.jpg' %}" alt=""> 
+                              <img src="{% static 'assets/images/products/p11_hover.jpg' %}" alt="" class="hover-image">
                           </a> 
                        </div>
                           <!-- /.image -->
@@ -1625,8 +1626,8 @@
                         <div class="product-image">
                           <div class="image"> 
                            <a href="detail.html">
-                             <img src="assets/images/products/p15.jpg" alt=""> 
-                              <img src="assets/images/products/p15_hover.jpg" alt="" class="hover-image">
+                             <img src="{% static 'assets/images/products/p15.jpg' %}" alt=""> 
+                              <img src="{% static 'assets/images/products/p15_hover.jpg' %}" alt="" class="hover-image">
                           </a> 
                        </div>
                           <!-- /.image -->
@@ -1673,8 +1674,8 @@
                         <div class="product-image">
                           <div class="image"> 
                            <a href="detail.html">
-                             <img src="assets/images/products/p14.jpg" alt=""> 
-                              <img src="assets/images/products/p14_hover.jpg" alt="" class="hover-image">
+                             <img src="{% static 'assets/images/products/p14.jpg' %}" alt=""> 
+                              <img src="{% static 'assets/images/products/p14_hover.jpg' %}" alt="" class="hover-image">
                           </a> 
                        </div>
                           <!-- /.image -->
@@ -1721,8 +1722,8 @@
                         <div class="product-image">
                           <div class="image"> 
                            <a href="detail.html">
-                             <img src="assets/images/products/p13.jpg" alt=""> 
-                              <img src="assets/images/products/p13_hover.jpg" alt="" class="hover-image">
+                             <img src="{% static 'assets/images/products/p13.jpg' %}" alt=""> 
+                              <img src="{% static 'assets/images/products/p13_hover.jpg' %}" alt="" class="hover-image">
                           </a> 
                        </div>
                           <!-- /.image -->
@@ -1769,8 +1770,8 @@
                         <div class="product-image">
                           <div class="image"> 
                            <a href="detail.html">
-                             <img src="assets/images/products/p5.jpg" alt=""> 
-                              <img src="assets/images/products/p5_hover.jpg" alt="" class="hover-image">
+                             <img src="{% static 'assets/images/products/p5.jpg' %}" alt=""> 
+                              <img src="{% static 'assets/images/products/p5_hover.jpg' %}" alt="" class="hover-image">
                           </a> 
                        </div>
                           <!-- /.image -->
@@ -1817,8 +1818,8 @@
                         <div class="product-image">
                           <div class="image">
                            <a href="detail.html">
-                             <img src="assets/images/products/p12.jpg" alt=""> 
-                              <img src="assets/images/products/p12_hover.jpg" alt="" class="hover-image">
+                             <img src="{% static 'assets/images/products/p12.jpg' %}" alt=""> 
+                              <img src="{% static 'assets/images/products/p12_hover.jpg' %}" alt="" class="hover-image">
                           </a> 
                        </div>
                           <!-- /.image -->
@@ -1874,7 +1875,7 @@
                       <div class="row product-list-row">
                         <div class="col col-sm-3 col-lg-3">
                           <div class="product-image">
-                            <div class="image"> <img src="assets/images/products/p3.jpg" alt=""> </div>
+                            <div class="image"> <img src="{% static 'assets/images/products/p3.jpg' %}" alt=""> </div>
                           </div>
                           <!-- /.product-image --> 
                         </div>
@@ -1921,7 +1922,7 @@
                       <div class="row product-list-row">
                         <div class="col col-sm-3 col-lg-3">
                           <div class="product-image">
-                            <div class="image"> <img src="assets/images/products/p4.jpg" alt=""> </div>
+                            <div class="image"> <img src="{% static 'assets/images/products/p4.jpg' %}" alt=""> </div>
                           </div>
                           <!-- /.product-image --> 
                         </div>
@@ -1968,7 +1969,7 @@
                       <div class="row product-list-row">
                         <div class="col col-sm-3 col-lg-3">
                           <div class="product-image">
-                            <div class="image"> <img src="assets/images/products/p5.jpg" alt=""> </div>
+                            <div class="image"> <img src="{% static 'assets/images/products/p5.jpg' %}" alt=""> </div>
                           </div>
                           <!-- /.product-image --> 
                         </div>
@@ -2015,7 +2016,7 @@
                       <div class="row product-list-row">
                         <div class="col col-sm-3 col-lg-3">
                           <div class="product-image">
-                            <div class="image"> <img src="assets/images/products/p6.jpg" alt=""> </div>
+                            <div class="image"> <img src="{% static 'assets/images/products/p6.jpg' %}" alt=""> </div>
                           </div>
                           <!-- /.product-image --> 
                         </div>
@@ -2062,7 +2063,7 @@
                       <div class="row product-list-row">
                         <div class="col col-sm-3 col-lg-3">
                           <div class="product-image">
-                            <div class="image"> <img src="assets/images/products/p7.jpg" alt=""> </div>
+                            <div class="image"> <img src="{% static 'assets/images/products/p7.jpg' %}" alt=""> </div>
                           </div>
                           <!-- /.product-image --> 
                         </div>
@@ -2109,7 +2110,7 @@
                       <div class="row product-list-row">
                         <div class="col col-sm-3 col-lg-3">
                           <div class="product-image">
-                            <div class="image"> <img src="assets/images/products/p8.jpg" alt=""> </div>
+                            <div class="image"> <img src="{% static 'assets/images/products/p8.jpg' %}" alt=""> </div>
                           </div>
                           <!-- /.product-image --> 
                         </div>
@@ -2156,7 +2157,7 @@
                       <div class="row product-list-row">
                         <div class="col col-sm-3 col-lg-3">
                           <div class="product-image">
-                            <div class="image"> <img src="assets/images/products/p9.jpg" alt=""> </div>
+                            <div class="image"> <img src="{% static 'assets/images/products/p9.jpg' %}" alt=""> </div>
                           </div>
                           <!-- /.product-image --> 
                         </div>
@@ -2203,7 +2204,7 @@
                       <div class="row product-list-row">
                         <div class="col col-sm-3 col-lg-3">
                           <div class="product-image">
-                            <div class="image"> <img src="assets/images/products/p10.jpg" alt=""> </div>
+                            <div class="image"> <img src="{% static 'assets/images/products/p10.jpg' %}" alt=""> </div>
                           </div>
                           <!-- /.product-image --> 
                         </div>
@@ -2250,7 +2251,7 @@
                       <div class="row product-list-row">
                         <div class="col col-sm-3 col-lg-3">
                           <div class="product-image">
-                            <div class="image"> <img src="assets/images/products/p11.jpg" alt=""> </div>
+                            <div class="image"> <img src="{% static 'assets/images/products/p11.jpg' %}" alt=""> </div>
                           </div>
                           <!-- /.product-image --> 
                         </div>
@@ -2297,7 +2298,7 @@
                       <div class="row product-list-row">
                         <div class="col col-sm-3 col-lg-3">
                           <div class="product-image">
-                            <div class="image"> <img src="assets/images/products/p12.jpg" alt=""> </div>
+                            <div class="image"> <img src="{% static 'assets/images/products/p12.jpg' %}" alt=""> </div>
                           </div>
                           <!-- /.product-image --> 
                         </div>
@@ -2344,7 +2345,7 @@
                       <div class="row product-list-row">
                         <div class="col col-sm-3 col-lg-3">
                           <div class="product-image">
-                            <div class="image"> <img src="assets/images/products/p13.jpg" alt=""> </div>
+                            <div class="image"> <img src="{% static 'assets/images/products/p13.jpg' %}" alt=""> </div>
                           </div>
                           <!-- /.product-image --> 
                         </div>
@@ -2391,7 +2392,7 @@
                       <div class="row product-list-row">
                         <div class="col col-sm-3 col-lg-3">
                           <div class="product-image">
-                            <div class="image"> <img src="assets/images/products/p14.jpg" alt=""> </div>
+                            <div class="image"> <img src="{% static 'assets/images/products/p14.jpg' %}" alt=""> </div>
                           </div>
                           <!-- /.product-image --> 
                         </div>
@@ -2468,34 +2469,34 @@
     <div id="brands-carousel" class="logo-slider">
       <div class="logo-slider-inner">
         <div id="brand-slider" class="owl-carousel brand-slider custom-carousel owl-theme">
-          <div class="item m-t-15"> <a href="#" class="image"> <img data-echo="assets/images/brands/brand1.png" src="assets/images/blank.gif" alt=""> </a> </div>
+          <div class="item m-t-15"> <a href="#" class="image"> <img data-echo="{% static 'assets/images/brands/brand1.png' %}" src="{% static 'assets/images/blank.gif" alt=""> </a> </div>
           <!--/.item-->
           
-          <div class="item m-t-10"> <a href="#" class="image"> <img data-echo="assets/images/brands/brand2.png" src="assets/images/blank.gif" alt=""> </a> </div>
+          <div class="item m-t-10"> <a href="#" class="image"> <img data-echo="{% static 'assets/images/brands/brand2.png' %}" src="{% static 'assets/images/blank.gif" alt=""> </a> </div>
           <!--/.item-->
           
-          <div class="item"> <a href="#" class="image"> <img data-echo="assets/images/brands/brand3.png" src="assets/images/blank.gif" alt=""> </a> </div>
+          <div class="item"> <a href="#" class="image"> <img data-echo="{% static 'assets/images/brands/brand3.png' %}" src="{% static 'assets/images/blank.gif" alt=""> </a> </div>
           <!--/.item-->
           
-          <div class="item"> <a href="#" class="image"> <img data-echo="assets/images/brands/brand4.png" src="assets/images/blank.gif" alt=""> </a> </div>
+          <div class="item"> <a href="#" class="image"> <img data-echo="{% static 'assets/images/brands/brand4.png' %}" src="{% static 'assets/images/blank.gif" alt=""> </a> </div>
           <!--/.item-->
           
-          <div class="item"> <a href="#" class="image"> <img data-echo="assets/images/brands/brand5.png" src="assets/images/blank.gif" alt=""> </a> </div>
+          <div class="item"> <a href="#" class="image"> <img data-echo="{% static 'assets/images/brands/brand5.png' %}" src="{% static 'assets/images/blank.gif" alt=""> </a> </div>
           <!--/.item-->
           
-          <div class="item"> <a href="#" class="image"> <img data-echo="assets/images/brands/brand6.png" src="assets/images/blank.gif" alt=""> </a> </div>
+          <div class="item"> <a href="#" class="image"> <img data-echo="{% static 'assets/images/brands/brand6.png' %}" src="{% static 'assets/images/blank.gif" alt=""> </a> </div>
           <!--/.item-->
           
-          <div class="item"> <a href="#" class="image"> <img data-echo="assets/images/brands/brand2.png" src="assets/images/blank.gif" alt=""> </a> </div>
+          <div class="item"> <a href="#" class="image"> <img data-echo="{% static 'assets/images/brands/brand2.png' %}" src="{% static 'assets/images/blank.gif" alt=""> </a> </div>
           <!--/.item-->
           
-          <div class="item"> <a href="#" class="image"> <img data-echo="assets/images/brands/brand4.png" src="assets/images/blank.gif" alt=""> </a> </div>
+          <div class="item"> <a href="#" class="image"> <img data-echo="{% static 'assets/images/brands/brand4.png' %}" src="{% static 'assets/images/blank.gif" alt=""> </a> </div>
           <!--/.item-->
           
-          <div class="item"> <a href="#" class="image"> <img data-echo="assets/images/brands/brand1.png" src="assets/images/blank.gif" alt=""> </a> </div>
+          <div class="item"> <a href="#" class="image"> <img data-echo="{% static 'assets/images/brands/brand1.png' %}" src="{% static 'assets/images/blank.gif" alt=""> </a> </div>
           <!--/.item-->
           
-          <div class="item"> <a href="#" class="image"> <img data-echo="assets/images/brands/brand5.png" src="assets/images/blank.gif" alt=""> </a> </div>
+          <div class="item"> <a href="#" class="image"> <img data-echo="{% static 'assets/images/brands/brand5.png' %}" src="{% static 'assets/images/blank.gif" alt=""> </a> </div>
           <!--/.item--> 
         </div>
         <!-- /.owl-carousel #logo-slider --> 
@@ -2658,11 +2659,11 @@
       <div class="col-xs-12 col-sm-4 no-padding">
         <div class="clearfix payment-methods">
           <ul>
-            <li><img src="assets/images/payments/1.png" alt=""></li>
-            <li><img src="assets/images/payments/2.png" alt=""></li>
-            <li><img src="assets/images/payments/3.png" alt=""></li>
-            <li><img src="assets/images/payments/4.png" alt=""></li>
-            <li><img src="assets/images/payments/5.png" alt=""></li>
+            <li><img src="{% static 'assets/images/payments/1.png' %}" alt=""></li>
+            <li><img src="{% static 'assets/images/payments/2.png' %}" alt=""></li>
+            <li><img src="{% static 'assets/images/payments/3.png' %}" alt=""></li>
+            <li><img src="{% static 'assets/images/payments/4.png' %}" alt=""></li>
+            <li><img src="{% static 'assets/images/payments/5.png' %}" alt=""></li>
           </ul>
         </div>
         <!-- /.payment-methods --> 
@@ -2677,18 +2678,18 @@
 <!-- For demo purposes – can be removed on production : End --> 
 
 <!-- JavaScripts placed at the end of the document so the pages load faster --> 
-<script src="assets/js/jquery-1.11.1.min.js"></script> 
-<script src="assets/js/bootstrap.min.js"></script> 
-<script src="assets/js/bootstrap-hover-dropdown.min.js"></script> 
-<script src="assets/js/owl.carousel.min.js"></script> 
-<script src="assets/js/echo.min.js"></script> 
-<script src="assets/js/jquery.easing-1.3.min.js"></script> 
-<script src="assets/js/bootstrap-slider.min.js"></script> 
-<script src="assets/js/jquery.rateit.min.js"></script> 
-<script src="assets/js/lightbox.min.js"></script> 
-<script src="assets/js/bootstrap-select.min.js"></script> 
-<script src="assets/js/wow.min.js"></script> 
-<script src="assets/js/scripts.js"></script>
+<script src="{% static 'assets/js/jquery-1.11.1.min.js' %}"></script> 
+<script src="{% static 'assets/js/bootstrap.min.js' %}"></script> 
+<script src="{% static 'assets/js/bootstrap-hover-dropdown.min.js' %}"></script> 
+<script src="{% static 'assets/js/owl.carousel.min.js' %}"></script> 
+<script src="{% static 'assets/js/echo.min.js' %}"></script> 
+<script src="{% static 'assets/js/jquery.easing-1.3.min.js' %}"></script> 
+<script src="{% static 'assets/js/bootstrap-slider.min.js' %}"></script> 
+<script src="{% static 'assets/js/jquery.rateit.min.js' %}"></script> 
+<script src="{% static 'assets/js/lightbox.min.js' %}"></script> 
+<script src="{% static 'assets/js/bootstrap-select.min.js' %}"></script> 
+<script src="{% static 'assets/js/wow.min.js' %}"></script> 
+<script src="{% static 'assets/js/scripts.js' %}"></script>
 </body>
 
 </html>
