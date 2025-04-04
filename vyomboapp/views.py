@@ -11,3 +11,6 @@ def ShowIndexPage(request):
 
 def ShowCookwarePage(request):
     return render(request, 'cookware_page.html')
+    
+def ShowDinnerwarePage(request):
+    return render(request, 'dinnerware_page.html')    

@@ -101,7 +101,7 @@
                   <li class="dropdown"> <a class="dropdown-toggle"  data-toggle="dropdown" href="category.html">Categories <b class="caret"></b></a>
                     <ul class="dropdown-menu" role="menu" >
                       <li class="menu-header">Categories</li>
-                      <li role="presentation"><a role="menuitem" tabindex="-1" href="category.html">- Cookware</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="{% url 'cookware_page' %}">- Cookware</a></li>
                       <li role="presentation"><a role="menuitem" tabindex="-1" href="category.html">- Dinnerware</a></li>
                       <li role="presentation"><a role="menuitem" tabindex="-1" href="category.html">- Food Storage Containers</a></li>
                       <li role="presentation"><a role="menuitem" tabindex="-1" href="category.html">- Cleaning Utensils</a></li>
@@ -181,7 +181,7 @@
             <div class="nav-outer">
               <ul class="nav navbar-nav">
                 <li class="active dropdown"> <a href="home.html">Home</a> </li>
-                <li class="dropdown yamm mega-menu"> <a href="home.html" data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown">Cookware</a>
+                <li class="dropdown yamm mega-menu"> <a href="{% url 'cookware_page' %}" data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown">Cookware</a>
                   <ul class="dropdown-menu container">
                     <li>
                       <div class="yamm-content ">
@@ -478,185 +478,35 @@
           <div class="head"><i class="icon fa fa-align-justify fa-fw"></i> Categories</div>
           <nav class="yamm megamenu-horizontal">
             <ul class="nav">
-              <li class="dropdown menu-item"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="{% static 'cooking-pot-svgrepo-com.svg' %}" alt="SVG Icon" width="30" height="40" />
+              <li class="dropdown"> <a href="{% url 'cookware_page' %}" ><img src="{% static 'cooking-pot-svgrepo-com.svg' %}" alt="SVG Icon" width="30" height="40" />
                 Cookware</a>
-                <ul class="dropdown-menu mega-menu">
-                  <li class="yamm-content">
-                    <div class="row">
-                      <div class="col-sm-12 col-md-4">
-                        <ul class="links list-unstyled">
-                          <li><a href="#">Saucepans</a></li>
-                          <li><a href="#">Flying Pans</a></li>
-                          <li><a href="#">Stockports</a></li>
-                          <li><a href="#">Dutch Ovens</a></li>
-                        </ul>
-                      </div>
-                      <!-- /.col -->
-                      <div class="col-sm-12 col-md-4">
-                        <ul class="links list-unstyled">
-                          <li><a href="#">Baking Sheets</a></li>
-                          <li><a href="#">Cake Pans</a></li>
-                          <li><a href="#">Muffin Tins</a></li>
-                          <li><a href="#">Loaf Pans</a></li>
-                        </ul>
-                      </div>
-                      <!-- /.col --> 
-                    </div>
-                    <!-- /.row --> 
-                  </li>
-                  <!-- /.yamm-content -->
-                </ul>
+              
                 <!-- /.dropdown-menu --> </li>
               <!-- /.menu-item -->
               
               <li class="dropdown menu-item"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="{% static 'restaurant-spoon-svgrepo-com.svg' %}" alt="SVG Icon" width="30" height="40" />
                 Dinnerware</a>
                 <!-- ================================== MEGAMENU VERTICAL ================================== -->
-                <ul class="dropdown-menu mega-menu">
-                  <li class="yamm-content">
-                    <div class="row">
-                      <div class="col-xs-12 col-sm-12 col-lg-3">
-                        <ul>
-                          <li><a href="#">Dinner Plates</a></li>
-                          <li><a href="#">Salad Plates</a></li>
-                          <li><a href="#">Dessert Plates</a></li>
-                        </ul>
-                      </div>
-                      <div class="col-xs-12 col-sm-12 col-lg-3">
-                        <ul>
-                          <li><a href="#">Cereal Bowls</a></li>
-                          <li><a href="#">Soup Bowls</a></li>
-                          <li><a href="#">Serving Bowls</a></li>
-                        </ul>
-                      </div>
-                      <div class="col-xs-12 col-sm-12 col-lg-3">
-                        <ul>
-                          <li><a href="#">Water Glasses</a></li>
-                          <li><a href="#">Juice Glasses</a></li>
-                          <li><a href="#">Wine Glasses</a></li>
-                        </ul>
-                      </div>
-                      <div class="col-xs-12 col-sm-12 col-lg-3">
-                        <ul>
-                          <li><a href="#">Coffee Mugs</a></li>
-                          <li><a href="#">Tea Cups</a></li>
-                          <li><a href="#">Travel Mugs</a></li>
-                        </ul>
-                      </div>
-                      <div class="dropdown-banner-holder"> <a href="#"><img alt="" src="{% static 'assets/images/banners/banner-side.png' %}" /></a> </div>
-                    </div>
-                    <!-- /.row --> 
-                  </li>
-                  <!-- /.yamm-content -->
-                </ul>
+                
                 <!-- /.dropdown-menu --> 
                 <!-- ================================== MEGAMENU VERTICAL ================================== --> </li>
               <!-- /.menu-item -->
               
               <li class="dropdown menu-item"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="{% static 'tray-stack-svgrepo-com.svg' %}" alt="SVG Icon" width="30" height="40" />
                 Food Storage Containers</a>
-                <ul class="dropdown-menu mega-menu">
-                  <li class="yamm-content">
-                    <div class="row">
-                      <div class="col-sm-12 col-md-4">
-                        <ul class="links list-unstyled">
-                          <li><a href="#">Tupperware</a></li>
-                          <li><a href="#">Food Storage Boxes</a></li>
-                          <li><a href="#">Meal Prep Containers</a></li>
-                        </ul>
-                      </div>
-                      <!-- /.col -->
-                      <div class="col-sm-12 col-md-4">
-                        <ul class="links list-unstyled">
-                          <li><a href="#">Mason Jars</a></li>
-                          <li><a href="#">Canning Jars</a></li>
-                        </ul>
-                      </div>
-                      <!-- /.col -->
-                      <div class="col-sm-12 col-md-4">
-                        <ul class="links list-unstyled">
-                          <li><a href="#">Airtight Metal Containers</a></li>
-                        </ul>
-                      </div>
-                      <!-- /.col -->
-                    </div>
-                    <!-- /.row --> 
-                  </li>
-                  <!-- /.yamm-content -->
-                </ul>
+                
                 <!-- /.dropdown-menu --> </li>
               <!-- /.menu-item -->
               
               <li class="dropdown menu-item"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="{% static 'sponge-2-svgrepo-com.svg' %}" alt="SVG Icon" width="30" height="40" />
                 Cleaning Utensils</a>
-                <ul class="dropdown-menu mega-menu">
-                  <li class="yamm-content">
-                    <div class="row">
-                      <div class="col-xs-12 col-sm-12 col-lg-4">
-                        <ul>
-                          <li><a href="#">Dish Soap</a></li>
-                          <li><a href="#">Liquid Dishwasher Detergent</a></li>
-                        </ul>
-                      </div>
-                      <div class="col-xs-12 col-sm-12 col-lg-4">
-                        <ul>
-                          <li><a href="#">Dish Sponges</a></li>
-                          <li><a href="#">Scrub Brushes</a></li>
-                          <li><a href="#">Bottle Brushes</a></li>
-                        </ul>
-                      </div>
-                      <div class="col-xs-12 col-sm-12 col-lg-4">
-                        <ul>
-                          <li><a href="#">Dish Racks</a></li>
-                          <li><a href="#">Drying Mats</a></li>
-                          <li><a href="#">Dish Towels</a></li>
-                        </ul>
-                      </div>
-                      <div class="dropdown-banner-holder"> <a href="#"><img alt="" src="{% static 'assets/images/banners/banner-side.png' %}" /></a> </div>
-                    </div>
-                    <!-- /.row --> 
-                  </li>
-                  <!-- /.yamm-content -->
-                </ul>
+               
                 <!-- /.dropdown-menu --> </li>
               <!-- /.menu-item -->
               
               <li class="dropdown menu-item"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="{% static 'ladle-soup-ladle-svgrepo-com.svg' %}" alt="SVG Icon" width="30" height="40" />
                 Serving Utensils</a>
-                <ul class="dropdown-menu mega-menu">
-                  <li class="yamm-content">
-                    <div class="row">
-                      <div class="col-sm-12 col-md-4">
-                        <ul class="links list-unstyled">
-                          <li><a href="#">Used for Food</a></li>
-                          <li><a href="#">Vegetables</a></li>
-                          <li><a href="#">Casseroles</a></li>
-                          <li><a href="#">For Serving Meat</a></li>
-                        </ul>
-                      </div>
-                      <!-- /.col -->
-                      <div class="col-sm-12 col-md-4">
-                        <ul class="links list-unstyled">
-                          <li><a href="#">Long-Handled Spoons</a></li>
-                          <li><a href="#">Forks</a></li>
-                          <li><a href="#">For Slicing</a></li>
-                          <li><a href="#">For Serving</a></li>
-                        </ul>
-                      </div>
-                      <!-- /.col -->
-                      <div class="col-sm-12 col-md-4">
-                        <ul class="links list-unstyled">
-                          <li><a href="#">For Serving Soups</a></li>
-                          <li><a href="#">For Serving Stews</a></li>
-                          <li><a href="#">For Serving Sauces</a></li>
-                        </ul>
-                      </div>
-                      <!-- /.col -->
-                    </div>
-                    <!-- /.row --> 
-                  </li>
-                  <!-- /.yamm-content -->
-                </ul>
+               
                 <!-- /.dropdown-menu --> </li>
               <!-- /.menu-item -->
               
@@ -2287,7 +2137,7 @@
              <li>
                <div class="feature-box">
                  <div class="icon-money"></div>
-                 <div class="content-blocks">Instagram @vyombo_vya_maishahalisitz</div>
+                 <div class="content-blocks">Instagram vyombo_vya_maishahalisitz</div>
                </div>
              </li> 
              <li>
