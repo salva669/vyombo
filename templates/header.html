@@ -1,0 +1,174 @@
+{% load static %}
+<header class="header-style-1"> 
+  <!-- TOP MENU -->
+  <div class="top-bar animate-dropdown">
+    <div class="container">
+      <div class="header-top-inner">
+        <div class="cnt-account">
+          <ul class="list-unstyled">
+            <li class="myaccount"><a href="#"><span>My Account</span></a></li>
+            <li class="wishlist"><a href="#"><span>Wishlist</span></a></li>
+            <li class="header_cart hidden-xs"><a href="#"><span>My Cart</span></a></li>
+            <li class="login"><a href="#"><span>Login</span></a></li>
+            <li class="check"><a href="#"><span>Logout</span></a></li>
+          </ul>
+        </div>
+        
+        <div class="cnt-block">
+          <ul class="list-unstyled list-inline">
+            <li class="dropdown dropdown-small"> 
+              <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">
+                <span class="value">TZS </span><b class="caret"></b>
+              </a>
+            </li>
+            <li class="dropdown dropdown-small lang"> 
+              <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">
+                <span class="value">English </span><b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Swahili</a></li>
+                <li><a href="#">English</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- MAIN HEADER -->
+  <div class="main-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-3 logo-holder"> 
+          <div class="logo"> 
+            <a href="#"> 
+              <img src="{% static 'assets/images/my logo1.jpg' %}" alt="logo"> 
+            </a> 
+          </div>
+        </div>
+        
+        <div class="col-lg-7 col-md-6 col-sm-8 col-xs-12 top-search-holder"> 
+          <div class="search-area">
+            <form>
+              <div class="control-group">
+                <input class="search-field" placeholder="Search here..." />
+                <a class="search-button" href="#"></a>
+              </div>
+            </form>
+          </div>
+        </div>
+        
+        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 animate-dropdown top-cart-row"> 
+          <div class="dropdown dropdown-cart"> 
+            <a href="#" class="dropdown-toggle lnk-cart" data-toggle="dropdown">
+              <div class="items-cart-inner">
+                <div class="basket"></div>
+              </div>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <div class="cart-item product-summary">
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <div class="image"> 
+                        <a href="detail.html">
+                          <img src="{% static 'assets/images/cookware/1.jpg' %}" alt="">
+                        </a> 
+                      </div>
+                    </div>
+                    <div class="col-xs-7">
+                      <h3 class="name"><a href="#">Simple Product</a></h3>
+                      <div class="price">Tzs.600.00</div>
+                    </div>
+                    <div class="col-xs-1 action"> 
+                      <a href="#"><i class="fa fa-trash"></i></a> 
+                    </div>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+                <hr>
+                <div class="clearfix cart-total">
+                  <div class="pull-right"> 
+                    <span class="text">Sub Total :</span><span class='price'>Tzs.600.00</span> 
+                  </div>
+                  <div class="clearfix"></div>
+                  <a href="logout.html" class="btn btn-upper btn-primary btn-block m-t-20">Logout</a> 
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- NAVBAR -->
+  <div class="header-nav animate-dropdown">
+    <div class="container">
+      <div class="yamm navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+          <button data-target="#mc-horizontal-menu-collapse" data-toggle="collapse" class="navbar-toggle collapsed" type="button"> 
+            <span class="sr-only">Toggle navigation</span> 
+            <span class="icon-bar"></span> 
+            <span class="icon-bar"></span> 
+            <span class="icon-bar"></span> 
+          </button>
+        </div>
+        
+        <div class="nav-bg-class">
+          <div class="navbar-collapse collapse" id="mc-horizontal-menu-collapse">
+            <div class="nav-outer">
+              <ul class="nav navbar-nav">
+                <li class="active dropdown"> <a href="#">Home</a> </li>
+                <li class="dropdown yamm mega-menu"> 
+                  <a href="{% url 'cookware_page' %}" class="dropdown-toggle" data-toggle="dropdown">Cookware</a>
+                </li>
+                <li class="dropdown mega-menu"> 
+                  <a href="category.html" class="dropdown-toggle" data-toggle="dropdown">Dinnerware</a>
+                </li>
+                <li class="dropdown mega-menu"> 
+                  <a href="category.html" class="dropdown-toggle" data-toggle="dropdown">Food Storage Containers</a>
+                </li>
+                <li class="dropdown mega-menu"> 
+                  <a href="category.html" class="dropdown-toggle" data-toggle="dropdown">Cleaning Utensils</a>
+                </li>
+                <li class="dropdown mega-menu"> 
+                  <a href="category.html" class="dropdown-toggle" data-toggle="dropdown">Serving Utensils</a>
+                </li>
+                <li class="dropdown"> 
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages</a>
+                  <ul class="dropdown-menu pages">
+                    <li>
+                      <div class="yamm-content">
+                        <div class="row">
+                          <div class="col-xs-12 col-menu">
+                            <ul class="links">
+                              <li><a href="#">Home</a></li>                                                        
+                              <li><a href="shopping-cart.html">Shopping Cart Summary</a></li>
+                              <li><a href="my-wishlist.html">Wishlist</a></li>
+                              <li><a href="track-orders.html">Track Orders</a></li>
+                              <li><a href="terms-conditions.html">Terms and Condition</a></li>
+                              <li><a href="faq.html">FAQ</a></li>
+                              <li><a href="sign-in.html">Login</a></li>
+                              <li><a href="logout.html">Logout</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown navbar-right special-menu"> 
+                  <a href="#">Get 30% off on selected items</a> 
+                </li>
+              </ul>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
